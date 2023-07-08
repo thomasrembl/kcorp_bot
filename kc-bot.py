@@ -1,14 +1,15 @@
 #Kc bot
-
-
+import os
+import dotenv
 import tweepy
 import time
+dotenv.load_dotenv()
 
-api_key = "1M20J4IBdxBRlllNCUhAW2sRl"
-api_secret = "RHGe04ERINBZc8rblf5jcm5Mf5vvOSUanpNZrbv2SStfFuSMSn"
-bearer_token = r"AAAAAAAAAAAAAAAAAAAAAOqSfgEAAAAAtHIw7y4iq2ta6MP4U46GRqQBH%2FY%3Dn0LwpUSKPtS1vieDWwHrBGIEgECUbdQY0HZ7xvN4yYZQiaA4DJ"
-access_token = "1555613716275777537-2ztVzDtcMXAjKrNIohplsoJKPu8ftF"
-access_token_secret = "kBJi7jnbbcSUyQ0qfrph1FdE44IrfKkv4PiBzPYncEsqS"
+api_key = os.environ.get('API_KEY')
+api_secret = os.environ.get('API_SECRET')
+bearer_token = os.environ.get('BEARER_TOKEN')
+access_token = os.environ.get('ACCESS_TOKEN')
+access_token_secret = os.environ.get('ACCESS_TOKEN_SECRET')
 
 
 
